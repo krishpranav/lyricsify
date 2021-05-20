@@ -28,4 +28,16 @@ class LyricsViewController: NSViewController {
     override func viewWillDisappear() {
         stopTimer()
     }
+    
+    @objc private func checkNowPlaying(_: Timer) {
+        if let nowPlayingTack = SpotifyHelpers.getNowPlaying() {
+            if
+                nowPlayingTack.title != "" &&
+                nowPlayingTack.title != self.trackTitleView.stringValue {
+                self.loadTrack(track: nowPlayingTrack)
+            }
+        } else {
+            self.spotifyIsNotRunning()
+        }
+    }
 }
