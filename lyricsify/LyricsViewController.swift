@@ -6,6 +6,7 @@
 //  Copyright © 2021 Krisna Pranav. All rights reserved.
 //
 
+
 import Cocoa
 
 class LyricsViewController: NSViewController {
@@ -30,10 +31,10 @@ class LyricsViewController: NSViewController {
     }
     
     @objc private func checkNowPlaying(_: Timer) {
-        if let nowPlayingTack = SpotifyHelpers.getNowPlaying() {
+        if let nowPlayingTrack = SpotifyHelpers.getNowPlaying() {
             if
-                nowPlayingTack.title != "" &&
-                nowPlayingTack.title != self.trackTitleView.stringValue {
+                nowPlayingTrack.title != "" &&
+                    nowPlayingTrack.title != self.trackTitleView.stringValue {
                 self.loadTrack(track: nowPlayingTrack)
             }
         } else {
@@ -99,5 +100,10 @@ class LyricsViewController: NSViewController {
             )
         }
     }
-
+    
+    func stopTimer() {
+        if nowPlayingTimer.isValid {
+            nowPlayingTimer.invalidate()
+        }
+    }
 }
