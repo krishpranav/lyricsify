@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		9FEAEC86265681D2007D0FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEAEC85265681D2007D0FAB /* AppDelegate.swift */; };
-		9FEAEC88265681D3007D0FAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEAEC87265681D3007D0FAB /* ViewController.swift */; };
 		9FEAEC8A265681D3007D0FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FEAEC89265681D3007D0FAB /* Assets.xcassets */; };
 		9FEAEC8D265681D3007D0FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FEAEC8B265681D3007D0FAB /* Main.storyboard */; };
 		9FEAEC99265681D3007D0FAB /* lyricsifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEAEC98265681D3007D0FAB /* lyricsifyTests.swift */; };
 		9FEAECA4265681D3007D0FAB /* lyricsifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEAECA3265681D3007D0FAB /* lyricsifyUITests.swift */; };
 		9FEAECB326568218007D0FAB /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 9FEAECB226568218007D0FAB /* Pods */; };
+		9FEAECB52656862D007D0FAB /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEAECB42656862D007D0FAB /* EventMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		9FEAEC82265681D2007D0FAB /* lyricsify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lyricsify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEAEC85265681D2007D0FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FEAEC87265681D3007D0FAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9FEAEC89265681D3007D0FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FEAEC8C265681D3007D0FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FEAEC8E265681D3007D0FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		9FEAECA3265681D3007D0FAB /* lyricsifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lyricsifyUITests.swift; sourceTree = "<group>"; };
 		9FEAECA5265681D3007D0FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FEAECB226568218007D0FAB /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Pods; path = "../../../../../Users/elango/Desktop/lyricsify-mac/Pods"; sourceTree = "<group>"; };
+		9FEAECB42656862D007D0FAB /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +100,11 @@
 			isa = PBXGroup;
 			children = (
 				9FEAEC85265681D2007D0FAB /* AppDelegate.swift */,
-				9FEAEC87265681D3007D0FAB /* ViewController.swift */,
 				9FEAEC89265681D3007D0FAB /* Assets.xcassets */,
 				9FEAEC8B265681D3007D0FAB /* Main.storyboard */,
 				9FEAEC8E265681D3007D0FAB /* Info.plist */,
 				9FEAEC8F265681D3007D0FAB /* lyricsify.entitlements */,
+				9FEAECB42656862D007D0FAB /* EventMonitor.swift */,
 			);
 			path = lyricsify;
 			sourceTree = "<group>";
@@ -258,8 +258,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FEAEC88265681D3007D0FAB /* ViewController.swift in Sources */,
 				9FEAEC86265681D2007D0FAB /* AppDelegate.swift in Sources */,
+				9FEAECB52656862D007D0FAB /* EventMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
