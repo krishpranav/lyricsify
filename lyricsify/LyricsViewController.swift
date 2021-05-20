@@ -65,4 +65,17 @@ class LyricsViewController: NSViewController {
         track.loadLyrics()
         self.hideLyricsView()
     }
+    
+    func showLyricsView() {
+        self.trackLyricsView.isHidden = false
+        self.trackTitleView.isHidden = false
+        trackProgressView.isHidden = true
+    }
+    
+    func hideLyricsView() {
+        trackProgressView.isHidden = false
+        self.trackLyricsView.isHidden = true
+        self.trackTitleView.isHidden = true
+    }
+
 }
