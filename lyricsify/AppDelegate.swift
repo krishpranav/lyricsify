@@ -10,17 +10,30 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-
-
+    let popover = NSPopover()
+    let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
+    var eventMonitor: EventMonitor?
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
-    }
-
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
-    }
-
-
+        statusItem.image = #imageLiteral(resourceName: "StatusIcon")
+        statusItem.toolTip = "Lyricsify"
+        popover.contentViewController = LyricsViewController(
+            nibName: "LyricsViewController",
+            bundle: nil
+        )
+        popover.behavior = .transient
+        
+        if let button = statusItem.button {
+            button.action = #selector(self.togglePopover(sender:))
+            button.sendAction(on: [.leftMouseUp, .rightMouseUp])
+        }
+        
+        eventMonitor = EventMonitor(mask: [.leftMouseDown, .leftMouseUp]) { event in
+            if self.popover.isShown {
+                self.closePopover(sender: event)
+            }
+        }
+        eventMonitor?.start()
 }
 
+}
