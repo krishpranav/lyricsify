@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Kanna (2.0.0)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Kanna (~> 2.0.0)
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kanna
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Kanna: 9a6637f72f5c77fe9c045b1efb2a5bb074754af8
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: a3e9a19bd0bc3ee2c4a7733633ab227111a7adb7
+
+COCOAPODS: 1.8.4
