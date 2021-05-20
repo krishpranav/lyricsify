@@ -9,7 +9,7 @@
 import Cocoa
 
 class Helpers {
-    public static func executeShellCommand(command: String, args; Array<String>) -> String {
+    public static func executeShellCommand(command: String, args: Array<String>) -> String {
         let pipe = Pipe()
         let process = Process()
         
@@ -19,11 +19,18 @@ class Helpers {
         process.launch()
         
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
-        let response: String = NSString (
+        let response: String = NSString(
             data: data,
             encoding: String.Encoding.utf8.rawValue
-        )! as String
+            )! as String
         return response
-        
+    }
+    
+    public static func excuteAppleScript(script: String) -> String {
+        let response = executeShellCommand(
+            command: "/usr/bin/osascript",
+            args: ["-e", script]
+            ).replacingOccurrences(of: "\n", with: "")
+        return response
     }
 }
