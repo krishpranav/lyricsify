@@ -45,4 +45,14 @@ class LyricsViewController: NSViewController {
         self.setTrackTitle(title: "Spotify is not running!")
         self.setTrackLyrics(lyrics: "")
     }
+    
+    func setTrackTitle(title: String) {
+        self.trackTitleView.stringValue = title
+        self.trackTitleView.isHidden = false
+    }
+    
+    func setTrackLyrics(lyrics: String) {
+        self.trackLyricsView.stringValue = lyrics
+        self.trackLyricsView.isHidden = false
+    }
 }
