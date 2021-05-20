@@ -18,5 +18,12 @@ class Helpers {
         process.arguments = args
         process.launch()
         
+        let data = pipe.fileHandleForReading.readDataToEndOfFile()
+        let response: String = NSString (
+            data: data,
+            encoding: String.Encoding.utf8.rawValue
+        )! as String
+        return response
+        
     }
 }
