@@ -55,4 +55,14 @@ class LyricsViewController: NSViewController {
         self.trackLyricsView.stringValue = lyrics
         self.trackLyricsView.isHidden = false
     }
+    
+    func loadTrack(track: Track) {
+        self.setTrackTitle(title: track.title)
+        track.onLyricsChanged = { lyrics in
+            self.setTrackLyrics(lyrics: track.lyrics!)
+            self.showLyricsView()
+        }
+        track.loadLyrics()
+        self.hideLyricsView()
+    }
 }
