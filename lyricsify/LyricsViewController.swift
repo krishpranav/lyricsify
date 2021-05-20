@@ -77,5 +77,27 @@ class LyricsViewController: NSViewController {
         self.trackLyricsView.isHidden = true
         self.trackTitleView.isHidden = true
     }
+    
+    func startTimer() {
+        if nowPlayingTimer.isValid {
+            return
+        }
+        
+        if #available(OSX 10.12, *) {
+            nowPlayingTimer = Timer.scheduledTimer(
+                withTimeInterval: 4,
+                repeats: true,
+                block: self.checkNowPlaying
+            )
+        } else {
+            nowPlayingTimer = Timer.scheduledTimer(
+                timeInterval: 4,
+                target: self,
+                selector: #selector(self.checkNowPlaying),
+                userInfo: nil,
+                repeats: true
+            )
+        }
+    }
 
 }
