@@ -40,4 +40,9 @@ class LyricsViewController: NSViewController {
             self.spotifyIsNotRunning()
         }
     }
+    
+    func spotifyIsNotRunning() {
+        self.setTrackTitle(title: "Spotify is not running!")
+        self.setTrackLyrics(lyrics: "")
+    }
 }
