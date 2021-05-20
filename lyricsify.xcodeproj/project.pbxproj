@@ -11,11 +11,12 @@
 		9FEAEC8D265681D3007D0FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FEAEC8B265681D3007D0FAB /* Main.storyboard */; };
 		9FEAEC99265681D3007D0FAB /* lyricsifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEAEC98265681D3007D0FAB /* lyricsifyTests.swift */; };
 		9FEAECA4265681D3007D0FAB /* lyricsifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEAECA3265681D3007D0FAB /* lyricsifyUITests.swift */; };
-		9FEAECB326568218007D0FAB /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 9FEAECB226568218007D0FAB /* Pods */; };
 		9FEAECB52656862D007D0FAB /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEAECB42656862D007D0FAB /* EventMonitor.swift */; };
 		9FEAECB726568C2B007D0FAB /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEAECB626568C2B007D0FAB /* Helpers.swift */; };
 		9FEAECBC26568E4F007D0FAB /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9FEAECBB26568E4F007D0FAB /* Base.lproj */; };
 		9FEAECC026568F1B007D0FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FEAECBF26568F1B007D0FAB /* Assets.xcassets */; };
+		9FEAECC226568FA9007D0FAB /* LyricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEAECC126568FA9007D0FAB /* LyricsViewController.swift */; };
+		9FEAECC426568FE1007D0FAB /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 9FEAECC326568FE1007D0FAB /* Pods */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,11 +48,12 @@
 		9FEAEC9F265681D3007D0FAB /* lyricsifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lyricsifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEAECA3265681D3007D0FAB /* lyricsifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lyricsifyUITests.swift; sourceTree = "<group>"; };
 		9FEAECA5265681D3007D0FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FEAECB226568218007D0FAB /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Pods; path = "../../../../../Users/elango/Desktop/lyricsify-mac/Pods"; sourceTree = "<group>"; };
 		9FEAECB42656862D007D0FAB /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		9FEAECB626568C2B007D0FAB /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		9FEAECBB26568E4F007D0FAB /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		9FEAECBF26568F1B007D0FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FEAECC126568FA9007D0FAB /* LyricsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsViewController.swift; sourceTree = "<group>"; };
+		9FEAECC326568FE1007D0FAB /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +84,7 @@
 		9FEAEC79265681D2007D0FAB = {
 			isa = PBXGroup;
 			children = (
-				9FEAECB226568218007D0FAB /* Pods */,
+				9FEAECC326568FE1007D0FAB /* Pods */,
 				9FEAEC84265681D2007D0FAB /* lyricsify */,
 				9FEAEC97265681D3007D0FAB /* lyricsifyTests */,
 				9FEAECA2265681D3007D0FAB /* lyricsifyUITests */,
@@ -111,6 +113,7 @@
 				9FEAEC8F265681D3007D0FAB /* lyricsify.entitlements */,
 				9FEAECB42656862D007D0FAB /* EventMonitor.swift */,
 				9FEAECB626568C2B007D0FAB /* Helpers.swift */,
+				9FEAECC126568FA9007D0FAB /* LyricsViewController.swift */,
 			);
 			path = lyricsify;
 			sourceTree = "<group>";
@@ -239,8 +242,8 @@
 			files = (
 				9FEAEC8D265681D3007D0FAB /* Main.storyboard in Resources */,
 				9FEAECBC26568E4F007D0FAB /* Base.lproj in Resources */,
+				9FEAECC426568FE1007D0FAB /* Pods in Resources */,
 				9FEAECC026568F1B007D0FAB /* Assets.xcassets in Resources */,
-				9FEAECB326568218007D0FAB /* Pods in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +270,7 @@
 			files = (
 				9FEAEC86265681D2007D0FAB /* AppDelegate.swift in Sources */,
 				9FEAECB726568C2B007D0FAB /* Helpers.swift in Sources */,
+				9FEAECC226568FA9007D0FAB /* LyricsViewController.swift in Sources */,
 				9FEAECB52656862D007D0FAB /* EventMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
