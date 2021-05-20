@@ -20,4 +20,12 @@ class LyricsViewController: NSViewController {
         super.viewDidLoad()
         startTimer()
     }
+    
+    override func viewWillAppear() {
+        startTimer()
+    }
+    
+    override func viewWillDisappear() {
+        stopTimer()
+    }
 }
