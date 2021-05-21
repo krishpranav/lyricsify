@@ -15,6 +15,9 @@ extension String {
             options: String.CompareOptions.regularExpression,
             range: nil
         )
-}
-
+    }
+    
+    func breakToNewLine() -> String {
+        return self.replacingOccurrences(of: "<br>", with: "\n")
+    }
 }
