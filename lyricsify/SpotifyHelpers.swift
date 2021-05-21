@@ -13,4 +13,12 @@ class SpotifyHelpers {
         )
         return response
     }
+    
+    public static func getSomethingOfCurrentTrack(thing: String) -> String {
+        return tellSpotify(
+            command: "\(thing) of current track"
+            ).replacingOccurrences(
+                of: "\n", with: ""
+        )
+    }
 }
