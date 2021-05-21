@@ -6,4 +6,11 @@
 //  Copyright © 2021 Krisna Pranav. All rights reserved.
 //
 
-import Foundation
+class SpotifyHelpers {
+    private static func tellSpotify(command: String) -> String {
+        let response = Helpers.excuteAppleScript(
+            script: "tell application \"Spotify\" to \(command) as string"
+        )
+        return response
+    }
+}
