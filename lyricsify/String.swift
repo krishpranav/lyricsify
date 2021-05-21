@@ -6,4 +6,15 @@
 //  Copyright © 2021 Krisna Pranav. All rights reserved.
 //
 
-import Foundation
+extension String {
+    func stripHtml() -> String {
+        let htmlReplaceString = "<[^>]+>"
+        return self.replacingOccurrences(
+            of: htmlReplaceString,
+            with: "",
+            options: String.CompareOptions.regularExpression,
+            range: nil
+        )
+}
+
+}
