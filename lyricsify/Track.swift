@@ -6,4 +6,14 @@
 //  Copyright © 2021 Krisna Pranav. All rights reserved.
 //
 
-import Foundation
+import Alamofire
+import SwiftyJSON
+import Kanna
+
+class Track {
+    public var artist: String
+    public var album:  String
+    public var name:   String
+    public var lyrics: String?
+    public var onLyricsChanged: ((String) -> Void)?
+}
